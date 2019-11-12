@@ -1,0 +1,811 @@
+
+
+
+
+
+<!DOCTYPE html>
+ 
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head id="Head1"><meta charset="utf-8" /><title>
+	Admission Letter Printing
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta content="width=device-width, initial-scale=1" name="viewport" /><meta name="description" /><meta name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    
+    <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" /><link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" /><link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" /><link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+    
+
+    <!-- END PAGE LEVEL PLUGIN STYLES -->
+    <!-- BEGIN PAGE STYLES -->
+    
+    <!-- END PAGE STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link id="style_components" href="assets/global/css/components.css" rel="stylesheet" type="text/css" /><link href="assets/global/css/plugins.css" rel="stylesheet" type="text/css" /><link href="assets/admin/css/layout.css" rel="stylesheet" type="text/css" /><link id="style_color" href="assets/admin/css/themes/darkblue.css" rel="stylesheet" type="text/css" /><link href="assets/admin/css/custom.css" rel="stylesheet" type="text/css" />
+   
+        <!-- END THEME TYLES -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-select/bootstrap-select.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/global/plugins/select2/select2.css" />
+    <link rel="stylesheet" type="text/css" href="assets/global/plugins/jquery-multi-select/css/multi-select.css" />
+    <link rel="stylesheet" type="text/css" href="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/global/plugins/icheck/skins/all.css" />
+    <link href="assets/Modalpopup.css"  rel="stylesheet" type="text/css" />
+    <link href="../assets/Modalpopup.css"  rel="stylesheet" type="text/css" />
+
+    <script src="assets/global/plugins/select2/String.Handling.js"></script>
+    <script src="../assets/global/plugins/select2/String.Handling.js"></script>
+
+
+  
+        <script type="text/javascript">
+        function NotAvailableDE() {
+            alert("2017 Direct Entry e-Registration Will Soon Be Available. Thank you!");
+        }
+        function NotAvailableUTME() {
+            alert("2017 Unified Tertiary Matriculation Examination e-Registration Will Soon Be Available. Thank you!");
+        }
+        function NotAvailableService() {
+            alert("We are Sorry, this Service is Currently Not Available. Inconvenience is Regretted... Thank you!");
+        }
+     </script>
+    <style type="text/css">
+        .Searchfield {
+            width: 150px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 40px;
+            font-size: 13px;
+            background-color: white;
+            background-image: url('../images/searchico.png');
+            background-position: 10px 6px;
+            background-repeat: no-repeat;
+            padding: 8px 20px 5px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+
+            .Searchfield:focus {
+                width: 100%;
+            } 
+    </style>
+    <style>
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+</style>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<!-- DOC: Apply "page-header-fixed-mobile" and "page-footer-fixed-mobile" class to body element to force fixed header or footer in mobile devices -->
+<!-- DOC: Apply "page-sidebar-closed" class to the body and "page-sidebar-menu-closed" class to the sidebar menu element to hide the sidebar by default -->
+<!-- DOC: Apply "page-sidebar-hide" class to the body to make the sidebar completely hidden on toggle -->
+<!-- DOC: Apply "page-sidebar-closed-hide-logo" class to the body element to make the logo hidden on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-hide" class to body element to completely hide the sidebar on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-fixed" class to have fixed sidebar -->
+<!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
+<!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
+<!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
+<body class="page-header-fixed page-quick-sidebar-over-content page-sidebar-closed-hide-logo page-container-bg-solid">
+    <!-- BEGIN HEADER -->
+    <div class="page-header navbar navbar-fixed-top">
+        <!-- BEGIN HEADER INNER -->
+        <div class="page-header-inner">
+            <!-- BEGIN LOGO -->
+            <div class="page-logo img-responsive"> 
+                <a href="#">
+                    
+                    <img class="logo-default" src="assets/admin/img/logo.png" alt="logo" />
+                 
+                </a>
+                <div class="menu-toggler sidebar-toggler hide">
+                </div>
+            </div>
+            <!-- END LOGO -->
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"></a>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+            <!-- BEGIN TOP NAVIGATION MENU -->
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <!-- BEGIN NOTIFICATION DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                  
+                    <!-- END NOTIFICATION DROPDOWN -->
+                    <!-- BEGIN INBOX DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                   
+                    <!-- END INBOX DROPDOWN -->
+                    <!-- BEGIN TODO DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+
+                    <!-- END TODO DROPDOWN -->
+                    <!-- BEGIN USER LOGIN DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <li class="dropdown dropdown-user">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            
+                            <img class="img-circle" alt="" src="assets/admin/img/avatar9_small.png" />
+                            <span class="username username-hide-on-mobile"></span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-default">
+                            <li>
+                                <a href="MyProfile">
+                                    <i class="icon-user"></i>My Profile </a>
+                            </li>
+                            <li>
+                                <a href="ChangeCandPassword">
+                                    <i class="fa fa-retweet" aria-hidden="true"></i>Change Password</a>
+                            </li>
+
+                            <li class="divider"></li>
+
+                            
+                            <li>
+                                <a href="Login">
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i>Log Out </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                 
+                </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+        </div>
+        <!-- END HEADER INNER -->
+    </div>
+    <!-- END HEADER -->
+    <div class="clearfix">
+    </div>
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!-- BEGIN SIDEBAR -->
+        <div class="page-sidebar-wrapper">
+            <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+            <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+            <div class="page-sidebar navbar-collapse collapse">
+                <!-- BEGIN SIDEBAR MENU -->
+                <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+                <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+                <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+                <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+                <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                    <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+                    <li class="sidebar-toggler-wrapper">
+                        <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                        <div class="sidebar-toggler">
+                        </div>
+                        <!-- END SIDEBAR TOGGLER BUTTON -->
+                    </li>
+                    <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+                    <li class="sidebar-search-wrapper" style="padding-top: 10px;">
+                        <div class="form-group">
+                                <input type="text" ID="filter"  name="search" placeholder="Search Menu.."  Class=" form-control Searchfield" /> 
+                            </div>
+                    </li>
+                    <li class="start   open">
+                        <a href="Home">
+                            <i class="icon-home"></i>
+                            <span class="title">Home</span>
+                            <span class="selected"></span>
+                        </a>
+                    </li> 
+                       
+                    <li class="start active open">
+                        <a href="#">
+                            <i class="fa fa-list-alt" aria-hidden="true"></i>
+                            <span class="title">Admissions</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu" id="accordionm">  
+                           
+                             <li>
+                                <a href="CAPSDirect">
+                                    <i class="fa fa-money"></i>
+                                    CAPS</a>
+                             </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li class="start active open">
+                        <a href="#">
+                            <i class="fa fa-list-alt" aria-hidden="true"></i>
+                            <span class="title">Services</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu" id="accordion"> 
+                             
+                                
+                            <li>
+                                <a href="ServiceCharge">
+                                    <i class="fa fa-money"></i>
+                                    CBT Centre Service Charge</a>
+                            </li>
+                            <li class="listparent">
+                                <a href="#">
+                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    <span class="title">Registration (2018 Only)</span>
+                                    <span class="arrow "></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        
+
+                                         <a href="registerDirectUTMEF">
+                                           <i class="fa fa-book"></i>
+                                            UTME Registration (Foreign)</a>
+                                    </li>
+                                    <li>
+                                        
+                                        <a href="UTMERegistration">
+                                            <i class="fa fa-book"></i>
+                                            UTME Registration</a>
+                                    </li>
+                                    <li>
+
+                                          <a href="UTMERegistrationCorrect">
+                                            <i class="fa fa-book"></i>
+                                            UTME Data Correction</a>
+                                    </li> 
+                                     <li>
+                                        
+                                       <a href="DERegistrationCorrect">
+                                            <i class="fa fa-book"></i>
+                                            Direct Entry Data Correction</a>
+                                    </li>
+                                  
+                                    <li style="display:none">
+                                        <a href="RegisterDEF">
+                                            <i class="fa fa-book"></i>
+                                            Direct Entry (Foreign)</a>
+                                    </li>
+                                  
+
+                                </ul>
+                            </li>
+                            
+                            <li class="listparent">
+                                <a href="#">
+                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    <span class="title">Results Notification</span>
+                                    <span class="arrow "></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li> 
+                                        <a href="UTMEMainResult">
+                                            <i class="fa fa-book"></i>
+                                            UTME Examination (Main)</a>
+                                    </li>
+                                    <li> 
+                                        <a href="UTMResultMock">
+                                            <i class="fa fa-book"></i>
+                                            UTME Examination (Mock)</a>
+                                    </li> 
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="PrintResultSlip">
+                                    <i class="fa fa-print"></i>
+                                    Print Result Slip</a>
+                            </li>
+                            <li>
+                                <a href="PrintAdmissionLetterConfirm">
+                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+
+                                    Admission Letter</a>
+                            </li>
+                            <li class="listparent">
+                                <a href="#Tiles">
+                                   <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                                    Application for Correction of Data<span class="arrow "></span></a>
+
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="ChangeCourseInstitution">
+                                            <i class="fa fa-university"></i>
+                                            Course/Institution</a>
+                                    </li>
+                                    <li>
+                                        <a href="ChangeNames">
+                                            <i class="fa fa-newspaper-o"></i>
+                                            Names</a>
+                                    </li>
+                                    <li>
+                                        <a href="ChangeDateofBirth">
+                                            <i class="fa fa-clock-o"></i>
+                                            Date of Birth</a>
+                                    </li>
+                                    <li>
+                                        <a href="ChangeGender">
+                                            <i class="fa fa-venus-mars" aria-hidden="true"></i>
+
+                                            Gender</a>
+                                    </li>
+                                    <li>
+                                        <a href="ChangeOrigin">
+                                            <i class="fa fa-plus-square"></i>
+                                            State/LGA of Origin</a>
+                                    </li>
+                                    <li style="display:none">
+                                        <a href="ChangePassport">
+                                            <i class="fa fa-plus-square"></i>
+                                            Passport Photograph</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="listparent">
+                                <a href="#Tiles">
+                                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                    Application for Regularisation<span class="arrow "></span></a> 
+                                     <ul class="sub-menu">
+                                        <li>
+                                            <a href="#Tiles">
+                                                <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                                                Application For Admission Letter<span class="arrow "></span></a>
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="RegularisationRedirect">
+                                                        <i class="fa fa-university"></i>
+                                                        Unregistered Admission (Not yet offered Admission by JAMB)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#Tiles">
+                                                        <i class="fa fa-university"></i>
+                                                        Change of Admission Letter</a>
+                                                    <ul class="sub-menu">
+                                                        <li>
+                                                            <a href="RegularisationRedirect">
+                                                                <i class="fa fa-university"></i>
+                                                                Intra (Change in Course Offered)</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="RegularisationRedirect">
+                                                                <i class="fa fa-university"></i>
+                                                                Inter (Deletion of Previous Institution)</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="RegularisationRedirect">
+                                                <i class="fa fa-recycle"></i>
+                                                Late Application (No Record with JAMB)</a>
+                                        </li>
+                                    </ul></li>
+
+                            <li>
+                                <a href="AdmissionStatus">
+                                    <i class="fa fa-safari"></i>
+                                    Check Admission Status</a>
+                            </li>  
+                              <li>
+                                <a href="RetrieveRegNumber">
+                                    <i class="fa fa-safari"></i>
+                                    Retrieve Reg Number</a>
+                            </li>  
+                              <li>
+                                <a href="MyDocuments">
+                                    <i class="fa fa-safari"></i>
+                                    My Documents</a>
+                            </li> 
+                            <li>
+                                <a href="MyPayments">
+                                    <i class="fa fa-recycle"></i>
+                                    My Payments</a>
+                            </li>
+                            <li>
+                                <a href="MyUsage">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    My Usage</a>
+                            </li>
+                            
+
+                            <li>
+                                <a href="http://www.jamb.gov.ng/brochure.aspx" target="_blank">
+                                    <i class="fa fa-book"></i>
+                                    Brochure</a>
+                            </li>
+
+                            <li>
+                                <a href="MyIndemnity">
+                                    <i class="fa fa-arrow-circle-o-down"></i>
+                                    My Indemnity Forms</a>
+                            </li>
+                            <li style="display:none">
+                                <a href="CompleteBankPayment">
+                                    <i class="fa fa-recycle"></i>
+                                    Complete Bank Payments</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                     <li>
+                        <a href="Login">
+                            <i class="fa fa-sign-out"></i>
+                            <span class="title">Log Out</span>
+                            <span class="selected"></span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <!-- END SIDEBAR MENU -->
+            </div>
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+                
+                <!-- /.modal -->
+                <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+                <div class="clearfix">
+                </div>
+
+                
+    <div class="page-bar">
+        <ul class="page-breadcrumb">
+            <li>
+                <i class="fa fa-home"></i>
+                <a href="#">Home</a>
+                <i class="fa fa-angle-right"></i>
+            </li>
+            <li>
+                <i class="fa fa-angle-right"></i>
+                <a href="#">Services</a>
+                <i class="fa fa-angle-right"></i>
+            </li>
+            <li>
+                <a href="#">Admission Letter Printing</a>
+            </li>
+        </ul>
+
+    </div>
+    
+    <div class="portlet-title">
+        <div class="caption"> 
+             <h3 class="page-title">
+                <i class="fa fa-newspaper-o" style="margin-right:4px"></i>Admission Letter Printing</h3>
+        </div>
+        <div class="tools">
+            <a href="javascript:;" class="collapse"></a>
+        </div>
+    </div>
+    <div class="content">
+        <!-- BEGIN LOGIN FORM -->
+        <form method="post" action="#" id="ctl00" class="login-form">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl00'];
+if (!theForm) {
+    theForm = document.ctl00;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/eFacility/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZNjFoPKBV6buMov6oTUOFxz6CXDRiAwgRN0gTTVhhq2QgruSuuAgPttM4TYG9l2pzw2&amp;t=636354907360000000" type="text/javascript"></script>
+
+
+<script src="/eFacility/ScriptResource.axd?d=D9drwtSJ4hBA6O8UhT6CQpmnwRVzIvrRDUaCsFAQJa3XZtCE8Yr4Ibjrv1l1PzfvtwgfybJsNRdE6p-xZ3hCFye4IluGohME9jpUFZ9HYXmfBLxy9akyR9xnJOFmz_-0dnqgTDBfhNlYFhvvj8Yk6xD5VEkmCZAPxyOS_VRIh981&amp;t=3d6efc1f" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/eFacility/ScriptResource.axd?d=JnUc-DEDOM5KzzVKtsL1tWbEnR7ZR41Rp5Tg1KBgVszLhZ14lRy07Q-6TzPGnakMbvoU6fxXlxBYt1OvYBQ11QG2jMmZZLwvoNqGTWzrSKmL2VV8rPn_XeFd8WdMtJ1wnVwnIsn8jC3egbOaknSD5nBU79oq8BGyMr2nAWEstNGZinthC5RZtZBadWbYFnE60&amp;t=3d6efc1f" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1B72D7AB" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="v7bs1rHtZiCJLA7mmnZkAe6x0VRh7QQxcLZxpaYQiY0Lguw6dHEZBW8+YJTvAmkhGuB8IDmzaqAIzI5cB2LiP9yc6Qopr/7ngBLpXivIF7asWSuRvGMOdaCZu9Uk6tHhiNfcfgBCO6U0hlMz87Irt92aLXM9DXNNSiLmJbLm+P9cQi8A8G0HEIoh5GmhRyzKyPRr7udLfzTbib/6Y37nMPrZg+ZxbYOv9XZGS4mIZ23nU2D99K0EOh3XMPiifuJkOhuaPn94+9yMWE7LNAAr6FsS/7WiV3gks9ZzHc1cr7HcLcOaYVsR7ZTc5PYDurlge5oC2/JDz/n32dUQ5qyBUgwByVps4f3z5li+FDMngG6QkwLLTmT8uI1OtSjPEjSODnHWKzOQjoFmII+WXkLpv/hALMmf0u5YgEavRVudzd5pg7mgMbJ4q0oY2dO91oZjO+OVgghTXvAK/DQXsDtEj56Ie8BsfyerB32yZO2vuGQAduIf9ybxUJAV4jUOOXoTdnVyKQqIcIocC+aynZ+o0v8R9wGVbobns/vq9sJ3TKK+1+A0dRWJYwwb1IarIToqFW4JfOWcRbVCFepBzKdf7ZMbrQfFB+Lh9eezOMox65f1sGOEqxDSuSexIYBc5wShUEvPStBwQV9ndQAaHIszPteyx1/IAnDr72AGQ6CbWEbNrnwitjYLlijI2ZhF3dJjScdFqzwVUIAVfMIa9IMJwGDeS27TydgjFtKOvBdEFYhWGWuapr7qOcmGG9azOpuZ" />
+</div>
+       <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ScriptManager1', 'ctl00', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+            
+            <div class="alert alert-danger display-hide">
+                
+                <span>Enter your username and password. </span>
+            </div>
+            
+
+            <div class="form-group">
+                <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                <div class="form-group">
+                    <label class="control-label visible-ie8 visible-ie9">Examination</label>
+                    <select name="ctl00$MainContent$ddlExamination" id="MainContent_ddlExamination" class="select2 form-control" name="state">
+	<option value="0">Select Examination...</option>
+	<option value="20">2017 Unified Tertiary Matriculation Examination (UTME)</option>
+	<option value="19">2016 Unified Tertiary Matriculation Examination (UTME)</option>
+	<option value="17">2015 Unified Tertiary Matriculation Examination (UTME)</option>
+	<option value="16">2014 Unified Tertiary Matriculation Examination (UTME)</option>
+	<option value="15">2013 Unified Tertiary Matriculation Examination (UTME)</option>
+	<option value="9">2012 Unified Tertiary Matriculation Examination (UTME)</option>
+	<option value="8">2011 Unified Tertiary Matriculation Examination (UTME)</option>
+	<option value="3">2010 Unified Tertiary Matriculation Examination (UTME)</option>
+	<option value="1">2009 University Matriculation Examination (UME)</option>
+	<option value="2">2009 Monotechnic, Polytechnic and Colleges of Education Examination (MPCE)</option>
+	<option value="4">2008 University Matriculation Examination (UME)</option>
+	<option value="5">2008 Monotechnic, Polytechnic and Colleges of Education Examination (MPCE)</option>
+	<option value="6">2007 University Matriculation Examination (UME)</option>
+	<option value="10">2007 Monotechnic, Polytechnic and Colleges of Education Examination (MPCE)</option>
+	<option value="7">2006 University Matriculation Examination (UME)</option>
+	<option value="11">2006 Monotechnic, Polytechnic and Colleges of Education Examination (MPCE)</option>
+	<option value="13">2005 University Matriculation Examination (UME)</option>
+	<option value="12">2005 Monotechnic, Polytechnic and Colleges of Education Examination (MPCE)</option>
+	<option value="14">2004 University Matriculation Examination (UME)</option>
+	<option value="18">2004 Monotechnic, Polytechnic and Colleges of Education Examination (MPCE)</option>
+	<option value="21">2002 University Matriculation Examination (UME)</option>
+	<option value="22">2001 University Matriculation Examination (UME)</option>
+	<option value="23">2000 University Matriculation Examination (UME)</option>
+	<option value="24">1999 University Matriculation Examination (UME)</option>
+	<option value="25">1998 University Matriculation Examination (UME)</option>
+	<option value="27">1996 University Matriculation Examination (UME)</option>
+	<option value="28">1995 University Matriculation Examination (UME)</option>
+
+</select>
+                </div>
+                <label class="control-label visible-ie8 visible-ie9">Registration Number</label>
+                <div class="input-icon">
+                    <i class="fa fa-user"></i>
+                    <input name="ctl00$MainContent$RegNumber" type="text" id="MainContent_RegNumber" class="form-control placeholder-no-fix" autocomplete="off" placeholder="Registration Number" onKeyUp="return Upper(this)" />
+                </div>
+            </div>
+            <div class="form-actions">
+                 <button onclick="__doPostBack('ctl00$MainContent$btnSearch','')" id="MainContent_btnSearch" type="submit" class="btn btn-circle green ">
+                    Print Admission Letter <i class="m-icon-swapdown m-icon-white" onserverclick="btnSearch_Click" causevalidation="true"></i>
+                </button>
+                  <button onclick="__doPostBack('ctl00$MainContent$btnSendAsMail','')" id="MainContent_btnSendAsMail" type="submit" class="btn btn-circle blue ">
+                    Send Admission Letter As Mail <i class="m-icon-swapright m-icon-white" onserverclick="btnSearch_Click" causevalidation="true"></i>
+                </button>
+                <br />
+                <br />
+                <br />
+            </div>
+         </form>
+        <!-- END LOGIN FORM -->
+    </div>
+
+
+            </div>
+        </div>
+        <!-- END CONTENT -->
+        <!-- BEGIN QUICK SIDEBAR -->
+        
+        <!-- END QUICK SIDEBAR -->
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BEGIN FOOTER -->
+    <div class="page-footer" style="text-align:center">
+        <div class="page-footer-inner">
+            2017 &copy; Joint Admissions and Matriculation Board (JAMB)
+        </div>
+        <div class="scroll-to-top">
+            <i class="icon-arrow-up"></i>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+    <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+    <!-- BEGIN CORE PLUGINS -->
+    <!--[if lt IE 9]>
+<script src="../assets/global/plugins/respond.min.js"></script>
+<script src="../../assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+    <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    
+    
+    <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->    
+    <script src="assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script> 
+
+    <script src="assets/global/plugins/bootbox/bootbox.min.js" type="text/javascript"></script> 
+    <script src="assets/pages/scripts/ui-bootbox.min.js" type="text/javascript"></script> 
+    
+    <script type="text/javascript" src="assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/global/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+    <script type="text/javascript" src="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script> 
+    <script src="assets/admin/pages/scripts/components-pickers.js"></script>
+    <script src="assets/admin/pages/scripts/table-advanced1.js"></script>
+
+   <!-- END CORE PLUGINS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    
+    <script type="text/javascript" src="../assets/global/plugins/jquery-validation/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../assets/global/plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="../assets/global/plugins/select2/select2.min.js"></script>
+    <script type="text/javascript" src="../assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js"></script>
+    <script type="text/javascript" src="../assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../assets/global/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+    <script type="text/javascript" src="../assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="../assets/admin/pages/scripts/components-dropdowns.js"></script>
+    <script src="../assets/admin/pages/scripts/form-samples.js"></script>
+    <script src="../assets/admin/pages/scripts/components-pickers.js"></script>
+    <script src="../assets/admin/pages/scripts/table-managed.js"></script>
+    <script src="../assets/admin/pages/scripts/form-validation1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            ComponentsDropdowns.init();
+            ComponentsPickers.init();
+            FormValidation1.init();
+            TableManaged.init();
+            $("#SearchClientModal").draggable({
+                handle: ".modal-header"
+            });
+            $("#SearchAgentClientModal").draggable({
+                handle: ".modal-header"
+            });
+            $('.date-own').datepicker({
+                minViewMode: 2,
+                format: 'yyyy',
+                autoclose: true
+            });
+
+        });
+    </script>
+
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->  
+    <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
+    <script src="assets/admin/scripts/layout.js" type="text/javascript"></script>
+    <script src="assets/admin/scripts/quick-sidebar.js" type="text/javascript"></script>
+    <script src="assets/admin/scripts/demo.js" type="text/javascript"></script>
+    
+       
+
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <script>
+        jQuery(document).ready(function () {
+            Metronic.init(); // init metronic core componets
+            Layout.init(); // init layout
+            QuickSidebar.init(); // init quick sidebar
+            Demo.init(); // init demo features
+        });
+    </script>
+    <!-- END JAVASCRIPTS -->
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/57a4aa57c061b615201ba9f2/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+  <style> /*<!-- override base menu css -->*/
+        .page-sidebar .page-sidebar-menu .sub-menu li > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li > a {
+            display: block;
+            margin: 0;
+            padding: 6px 15px 6px 13px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 300;
+            background: none;
+        }
+        .page-sidebar .page-sidebar-menu .sub-menu li > .sub-menu > li > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li > .sub-menu > li > a {
+            padding-left: 17px;
+        }
+        .page-sidebar .page-sidebar-menu .sub-menu li > .sub-menu > li > .sub-menu > li > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li > .sub-menu > li > .sub-menu > li > a {
+            padding-left: 20px;
+        }
+        .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li:hover > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.open > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.active > a, .page-sidebar .page-sidebar-menu .sub-menu > li:hover > a, .page-sidebar .page-sidebar-menu .sub-menu > li.open > a, .page-sidebar .page-sidebar-menu .sub-menu > li.active > a {
+            background: #446b41 !important;
+            color:#fff !important;
+        }
+        .listparent{
+             
+        }
+        .listparent > ul{
+          background: #CDD3CB !important;
+        }
+    </style>
+    <script type="text/javascript">
+      $(window).load(function(){ // $(document).ready(function () {
+         
+         $("#filter").keyup(function () {
+                var filter = $(this).val(),
+                    count = 0;
+                $("#accordion li").each(function () {
+                    if (filter == "") {
+                        $(this).css("visibility", "visible");
+                        $(this).fadeIn();
+                    } else if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                        $(this).css("visibility", "hidden");
+
+                        //make all expand here
+                        //if (!$(this).hasClass("open")) {
+                        //    $(this).addClass("open");
+                        //}
+                        //-------------------------
+                        $(this).fadeOut();
+                    } else {
+                        $(this).css("visibility", "visible");
+                        $(this).fadeIn();
+                    }
+                });
+             //rebind the menu tree
+              //  Demo.init(); // init layout
+             ////----------------------------
+
+            });
+        });
+    </script>
+</body>
+<!-- END BODY -->
+</html>
